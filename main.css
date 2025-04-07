@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+}
+
+nav
+{
+    width: 100vw;
+    position: absolute;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav ul{
+    list-style: none;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h2{
+    letter-spacing: 5px;
+}
+
+nav ul li {
+    cursor: pointer;
+    user-select: none;
+    transition: 0.4s;
+}
+
+nav ul li:hover {
+    color: rgb(255, 98, 41);
+}
+
+main
+{
+    height: 100vh;
+    background-image: url("./image/img1.jpg");
+}
+
+#Content
+{
+    width: 80vw;
+    color: white;
+    position: relative;
+    top: 170px;
+    left: 120px;
+}
+
+#Content h4
+{
+    letter-spacing: 5px;
+}
+#Content h1
+{
+    font-size: 60px;
+    width:50%;
+}
+
+#Content p{
+    font-size: 15px;
+    width: 40%;
+}
+#Content h1 span{
+    color: rgb(255, 98, 41);
+}
+
+.btns
+{
+    width: 30%;
+    position: relative;
+    top: 40px;
+    column-gap: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn1
+{
+    background-color: rgb(255, 98, 41);
+    border: 2px solid rgb(255, 98, 41) ;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 30px;
+}
+
+
+#btn2
+{
+    background:none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 30px;
+}
+#btn1:hover
+{
+    background:none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#btn2:hover
+{
+    background-color: rgb(255, 98, 41);
+    border: 2px solid rgb(255, 98, 41) ;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#Card
+{
+    height: 250px;
+    width: 700px;
+    position: relative;
+    top: 125px;
+    left: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    column-gap: 15px;
+    cursor: pointer;
+
+}
+
+.Card
+{
+    height: 100%;
+    width: 170px;
+    border-radius: 20px;
+    column-gap: 10px;
+    transition: .2s;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.Card h3
+{
+    color: white;
+}
+
+.Card p{
+    font-size: 12px;
+    color: white;
+}
+
+.Card:nth-child(1)
+{
+    height: 100%;
+    width: 170px;
+    background-image: url("./image/img2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.Card:nth-child(2)
+{
+    height: 100%;
+    width: 170px;
+    background-image: url("./image/img3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.Card:nth-child(3)
+{
+    height: 100%;
+    width: 170px;
+    background-image: url("./image/img4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.Card:nth-child(4)
+{
+    height: 100%;
+    width: 170px;
+    background-image: url("./image/img5.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.Card:hover{
+    transform: scale(1.07);
+}
